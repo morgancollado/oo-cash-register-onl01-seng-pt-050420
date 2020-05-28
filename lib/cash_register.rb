@@ -35,7 +35,9 @@ class CashRegister
   end 
   
   def void_last_transaction
-    
+    @total -= transactions[cart[-1]]["amount"] * transactions[cart[-1]]["quantity"] 
+    transactions.delete(cart[-1])
+    @total
   end 
   
   
