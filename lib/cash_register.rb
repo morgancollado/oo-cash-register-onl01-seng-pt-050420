@@ -16,7 +16,7 @@ class CashRegister
      count += 1
    end 
    transactions[item] ={
-   "price" => price
+   "price" => price,
    "quantity" => quantity
     } 
     @total += amount * quantity
